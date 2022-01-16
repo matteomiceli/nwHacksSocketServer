@@ -8,6 +8,7 @@ const io = require('socket.io')(server, {
     methods: ["GET", "POST"]
   }
 });
+const port = process.env.PORT || 8080;
 
 const socket = require('./src/controllers/socket');
 
@@ -24,6 +25,6 @@ app.get("/user/:id", (req, res) => {
 // socket logic
 socket(io)
 
-server.listen(8080, () => {
-  console.log("listening on localhost:8080")
+server.listen(port, () => {
+  console.log("listening on localhost:port")
 });
