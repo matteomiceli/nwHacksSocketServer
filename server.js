@@ -14,12 +14,7 @@ const socket = require('./src/controllers/socket');
 
 
 app.get("/", (req, res) => {
-  res.send('Socket Server API: connection on /user/:id');
-});
-
-app.get("/user/:id", (req, res) => {
-  const id = req.params.id
-  res.send('test ' + id);
+  res.send('Socket server chadsocketserver.herokuapp.com');
 });
 
 // socket logic
