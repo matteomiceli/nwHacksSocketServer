@@ -18,8 +18,8 @@ app.get("/", (req, res) => {
 });
 
 // socket logic
-socket(io)
+socket(io);
 
 server.listen(port, () => {
-  console.log("listening on localhost:port")
+  console.log(`listening on localhost:${port}`)
 });
