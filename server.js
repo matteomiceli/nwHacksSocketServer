@@ -14,7 +14,7 @@ const socket = require('./src/controllers/socket');
 
 
 app.get("/", (req, res) => {
-  res.send('Socket server chadsocketserver.herokuapp.com');
+  res.send('Socket server revisionsocketserver.herokuapp.com');
 });
 
 // socket logic
